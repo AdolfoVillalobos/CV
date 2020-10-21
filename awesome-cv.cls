@@ -74,7 +74,7 @@
 \RequirePackage{unicode-math}
 % Needed to use icons from font-awesome
 % (https://github.com/posquit0/latex-fontawesome)
-\RequirePackage{fontawesome}
+\RequirePackage{}
 \RequirePackage[default,opentype]{sourcesanspro}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
@@ -182,6 +182,16 @@
 \newcommand*{\footerfont}{\sourcesanspro}
 \newcommand*{\bodyfont}{\sourcesanspro}
 \newcommand*{\bodyfontlight}{\sourcesansprolight}
+
+\newcommand*{\faicon}[1]{{
+  \FA\csname faicon@#1\endcsname
+}}
+
+\expandafter\def\csname faicon@mobile\endcsname {\symbol{"F10B}} \def\faMobile {{\FA\csname faicon@mobile\endcsname}}
+\expandafter\def\csname faicon@github-square\endcsname {\symbol{"F092}} \def\faGithubSquare {{\FA\csname faicon@github-square\endcsname}}
+\expandafter\def\csname faicon@envelope\endcsname {\symbol{"F0E0}} \def\faEnvelope {{\FA\csname faicon@envelope\endcsname}}
+\expandafter\def\csname faicon@home\endcsname {\symbol{"F015}} \def\faHome {{\FA\csname faicon@home\endcsname}}
+\expandafter\def\csname faicon@linkedin-square\endcsname {\symbol{"F08C}} \def\faLinkedinSquare {{\FA\csname faicon@linkedin-square\endcsname}}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
