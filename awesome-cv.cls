@@ -618,6 +618,18 @@
   \end{tabular*}%
 }
 
+\newcommand*{\cvsubentry}[4]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \ifempty{#2#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#3} \\}
+      {\entrytitlestyle{#2} &  \\
+      \entrypositionstyle{#1} &  \\}
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}}
+  \end{tabular*}%
+}
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
@@ -626,21 +638,21 @@
 }
 % Define a subentry of cv information
 % Usage: \cvsubentry{<position>}{<title>}{<date>}{<description>}
-\newcommand*{\cvsubentry}[4]{%
-  \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \setlength\leftskip{0.2cm}
-    \subentrytitlestyle{#2} & \ifthenelse{\equal{#1}{}}
-      {\subentrydatestyle{#3}}{}
-    \ifthenelse{\equal{#1}{}}
-      {}
-      {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
-    \ifthenelse{\equal{#4}{}}
-      {}
-      {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
-  \end{tabular*}
-}
+% \newcommand*{\cvsubentry}[4]{%
+%   \setlength\tabcolsep{0pt}
+%   \setlength{\extrarowheight}{0pt}
+%   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+%     \setlength\leftskip{0.2cm}
+%     \subentrytitlestyle{#2} & \ifthenelse{\equal{#1}{}}
+%       {\subentrydatestyle{#3}}{}
+%     \ifthenelse{\equal{#1}{}}
+%       {}
+%       {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
+%     \ifthenelse{\equal{#4}{}}
+%       {}
+%       {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
+%   \end{tabular*}
+% }
 
 % Define an environment for cvhonor
 \newenvironment{cvhonors}{%
