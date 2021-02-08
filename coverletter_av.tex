@@ -1,0 +1,153 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./src/profile}
+\name{Adolfo}{Villalobos}
+\position{LATAM Bookmaker{\enskip\cdotp\enskip}Data Scientist}
+\address{Santiago, Chile}
+
+\mobile{(+56) 9 6247 5153}
+\email{amvillalobos@uc.cl}
+\homepage{amvillalobos.me}
+\github{AdolfoVillalobos}
+\linkedin{adolfovillalobos}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+\quote{``Meaningful Work. Meaningful Relationships."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Coolbet  and GAN limited\\ Tallinn, Estonia.}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for LATAM Bookmaker}
+% How the letter is opened
+\letteropening{Dear Coolbet and GAN limited Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+%\usepackage{fontawesome}
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Adolfo Villalobos~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+
+I am an engineer with a strong background in mathematics, probability, statistics and computer science. 
+I am interested in problems of uncertainty and risk, and building systems that learn effectively from data. 
+My goal is to build cool products that allow me to explore those interests.  I am also a creative individual. I love great music and literature (I sing and play guitar). 
+The things that I most value are learning, being challenged and working 
+with talented people.
+
+I also love both sports and competition.  I gather often to watch sport events with family and friends, mostly football games, but also endurance sports and the olympics.
+I cried when Chile won its first Copa America against
+ Argentina. I also dream to finish an Iron Man triathlon someday, since I love endurance sports. As for e-sports, I played League of Legends until recently, and was very familiar
+ with the local Twitch scene (I have friends that became pro-players). I love watching live matches, and often stayed to late hours whenever the wold cup was being broadcasted. 
+ I stopped playing LoL when I was in university to focus on my studies, but still continued to play less-demanding competitive games. 
+
+\lettersection{Why Coolbet?}
+
+I just love your culture and product. You encourage people to be themselves, to work hard and be the best, but
+also have fun and have balance. I would feel at home. 
+Also, your product is amazing to me, since I haven't seen anything like it in the region. 
+I think the job position combines most of the things I love: 
+Dealing with Uncertainty, technology, sports, competition and data. I would be thrilled to join you and help you succeed. Frankly would do it for free just to be a part of it. 
+
+\lettersection{Why Me?}
+
+I am smart, driven and a team player. I have the skills and knowledge required to face the technical challenges, and the ability to
+adapt, learn and succeed under any obstacle.  I am already in love with the product, and I think that my experience with the local sport scene can be of value.
+I you consider me, be sure that I consider the possibility of working with you a once-in-a-lifetime opportunity, and I will give my best to help you grow.
+ 
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

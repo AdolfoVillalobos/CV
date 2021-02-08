@@ -1,0 +1,164 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./src/profile}
+\name{Adolfo}{Villalobos}
+\position{LATAM Bookmaker{\enskip\cdotp\enskip}Data Scientist}
+\address{Santiago, Chile}
+
+\mobile{(+56) 9 6247 5153}
+\email{amvillalobos@uc.cl}
+\homepage{amvillalobos.me}
+\github{AdolfoVillalobos}
+\linkedin{adolfovillalobos}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+\quote{``Meaningful Work. Meaningful Relationships."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Coolbet  and GAN limited\\ Tallinn, Estonia.}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for LATAM Bookmaker}
+% How the letter is opened
+\letteropening{Dear Coolbet and GAN limited Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+%\usepackage{fontawesome}
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Adolfo Villalobos~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Sobre Mi}
+
+
+Soy un ingeniero con una fuerte base en matemáticas, probabilidades, estadística y ciencia de la computación.
+Mi interés profesional esta enfocado en lidiar con problemas de riesgo e incertidumbre, y por otro lado,
+crear sistemas que aprendan a partir de los datos, y tomen decisiones en el mundo real. Mi objetivo es crear productos
+que me permitan resolver problemas reales de la sociedad, y a la vez explorar esos intereses que he planteado.
+Por otra parte, también soy una persona creativa. Siento gran pasión por la música y la literatura (Canto y toco varios instrumentos).
+A nivel de motivación, lo que mas valoro es trabajar en un equipo que me permita aprender, que me desafíe, que trabaje en un problema interesante,
+y que me permita interactuar con gente talentosa.
+
+Soy un gran fan de los deportes y la competición. Me reúno frecuentemente con amigos y familia para ver eventos deportivos en el fútbol, e-sports y 'endurance'.
+Me emocione hasta el llanto cuando Chile gano su primera Copa America, y también cuando el jugador 'xPeke' dio vuelta una partida en el campeonato
+"IEM Katowice' a partir de su famoso 'backdoor'. En lo personal, mis deporte tradicional favorito es el maratón, y sueno
+con algún dia terminar un IronMan. En cuando a e-sports, jugué con mucha pasión 'League of Legends', y me involucre activamente con la escena latinoamericana
+de competencias y equipos profesionales, teniendo amistades que actualmente son jugadores pro o 'streamers'. 
+
+Me encanta la escena competitiva asociada a los e-sports, en particular tengo excelentes recuerdos de quedarme hasta muy tarde con amigos para ver la final
+de algún campeonato mundial. Deje de jugar cuando entre a la universidad, para priorizar mis estudios, pero actualmente me encuentro re-descubriendo este
+maravilloso mundo, ahora que he finalizado mis estudios.
+
+\lettersection{Por qué Coolbet?}
+
+Principalmente me atrae su cultura y el producto que han creado. Pienso que celebran la diversidad, el trabajo duro y desean ser los mejores,
+pero a la vez desean divertirse trabajando y tener un balance. Todo lo anterior me parece como si estuviera en casa.
+En cuanto al producto, me parece simplemente increíble. Por un lado, tienen como objetivo darle el mayor posible al usuario, y por otro, no he visto
+nada parecido en la region de LATAM, con lo cual creo que tienen una tremenda oportunidad para generar valor y crecer. 
+
+EL puesto trabajo al cual he aplicado combina muy bien mis intereses profesionales y personales: trabajar en problemas relacionado con riesgo e incertidumbre en un producto
+tecnológico atractivo, y que pone al centro el deseo de las personas de disfrutar de una manera distinta la competición deportiva. Estaría enormemente
+emocionado de unirme al equipo, y ayudarles a tener éxito. 
+
+\lettersection{Por qué yo?} 
+
+Soy una persona inteligente, con iniciativa y ganas de trabajar en equipo. Tengo las competencias y conocimientos necesarios para enfrentar el desafió que
+la posición plantea, y también la humildad y capacidad para aprender aquello que no se, y enfrentar obstáculos a medida que se presenten de manera exitosa.
+Adicionalmente, mi experiencia y amor por los e-sports puede ser valiosa para ustedes. Finalmente, tengo un hambre gigantesca
+por unirme a una compañía como la suya y colabora. Sin duda, para mi seria una oportunidad única en la vida, y estoy dispuesto a dar todo de mi parte,
+en caso de que consideren seriamente mi aplicación.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
